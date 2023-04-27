@@ -1,0 +1,76 @@
+.header {
+    margin-bottom: 40px;
+}
+
+.promo {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.sub_title {
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 24px;
+}
+
+.avatar {
+    display: block;
+    box-shadow: -10px 5px 5px var(--font-primary-color);
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact {
+    margin-bottom: 6px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--font-primary-color);
+}
+
+.social_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav_list {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: var(--font-primary-color);
+}
+
+.nav_link {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--background-color);
+}
+
+.nav_link:hover {
+    opacity: 0.7;
+}
+
+.nav_link:active {
+    opacity: 0.5;
+}
