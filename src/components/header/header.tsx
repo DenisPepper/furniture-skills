@@ -2,9 +2,11 @@ import css from './header.module.css';
 import avatar from '../../assets/avatar.jpg';
 import tg from '../../assets/tg.svg';
 import vk from '../../assets/vk.svg';
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 export const Header = () => {
+    const {pathname} = useLocation();
+
     return (
         <header className={css.header}>
             <div className={css.promo}>
@@ -37,16 +39,16 @@ export const Header = () => {
             <nav className={css.nav}>
                 <ul className={css.nav_list}>
                     <li className={css.nav_item}>
-                        <Link className={css.nav_link} to='/'>Прошлый опыт</Link>
+                        <Link className={`${css.nav_link} ${pathname === '/' ? css.nav_link_current : ''}`} to='/'>Прошлый опыт</Link>
                     </li>
                     <li className={css.nav_item}>
-                        <Link className={css.nav_link} to='/skills'>Профессиональные навыки</Link>
+                        <Link className={`${css.nav_link} ${pathname === '/skills' ? css.nav_link_current : ''}`} to='/skills'>Профессиональные навыки</Link>
                     </li>
                     <li className={css.nav_item}>
-                        <Link className={css.nav_link} to='/ex'>Примеры работ</Link>
+                        <Link className={`${css.nav_link} ${pathname === '/ex' ? css.nav_link_current : ''}`} to='/ex'>Примеры работ</Link>
                     </li>
                     <li className={css.nav_item}>
-                        <Link className={css.nav_link} to='/edu'>О себе</Link>
+                        <Link className={`${css.nav_link} ${pathname === '/edu' ? css.nav_link_current : ''}`} to='/edu'>О себе</Link>
                     </li>
                 </ul>
             </nav>

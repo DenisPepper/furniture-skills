@@ -33,7 +33,7 @@ export const SkillsPage = () => {
                 <h3>Дополнительно</h3>
                 <ul>
                     <li className={css.skill_item}>
-                        есть опыт работы с: wood WOP, Cutting, K3, 1C, Corel Draw (инструкции в формате HOFF);
+                        есть опыт работы с:  HTML5, CSS3, JavaScript, TypeScript, wood WOP, Cutting, K3, 1C, Corel Draw (инструкции в формате HOFF);
                     </li>
                 </ul>
             </p>
