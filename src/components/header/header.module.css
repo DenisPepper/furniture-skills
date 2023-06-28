@@ -74,10 +74,9 @@
 
 .nav_link:before {
     display: none;
-    content: '>';
+    content: '*';
     position: absolute;
-    left: -2px;
-    top: 12px;
+    top: 15px;
     color: white;
     font-size: 0.8rem;
 }
